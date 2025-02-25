@@ -24,7 +24,7 @@ export function Footer() {
         <section className="bg-[#E84c3d] py-16 text-white">
             <div className='container mx-auto px-4'>
 
-                <div className='border-b border-white/20 pb-8'>
+                <div className='border-b border-white/20 pb-8' data-aos="fade-up" data-aos-duration="3000">
                     <h4 className='text-4xl font-semibold mb-12 text-center flex items-center justify-center gap-3'>
                         <Bone className="w-8 h-8" />
                         Marcas que trabalhamos
@@ -52,7 +52,7 @@ export function Footer() {
                 </div>
 
                 <footer className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-5'>
-                    <div>
+                    <div data-aos="fade-up-left">
                         <h3 className='text-2xl font-semibold mb-2'>Pet Shop Dev</h3>
                         <p className='mb-4'>Cuidando do seu melhor amigo com amor e dedicação.</p>
                         <a
@@ -65,15 +65,15 @@ export function Footer() {
                     </div>
 
 
-                    <div>
+                    <div data-aos="flip-up">
                         <h3 className='text-2xl font-semibold mb-2'>Contatos</h3>
-                        <p>Email: teste@teste.com</p>
-                        <p>Telefone: (XX) 1231831238</p>
-                        <p>Rua X, centro, Campo Grande | MS</p>
+                        <p>Email: petshop1234@gmail.com</p>
+                        <p>Telefone: (61) 3131-3131</p>
+                        <p>Asa Sul, Brasília | DF</p>
                     </div>
 
 
-                    <div>
+                    <div data-aos="fade-up-right">
                         <h3 className='text-2xl font-semibold mb-2'>Redes sociais</h3>
                         <div className='flex gap-4'>
                             <a
