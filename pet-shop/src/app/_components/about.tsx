@@ -13,7 +13,7 @@ export function About() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-                    <div className="relative">
+                    <div className="relative" data-aos="fade-up-right" data-aos-delay="300">
 
                         <div className="relative w-full h-[400px] rounded-3xl overflow-hidden">
                             <Image
@@ -40,8 +40,8 @@ export function About() {
 
                     </div>
 
-                    <div className="space-y-6 mt-10">
-                        <h2 className="text-4xl font-bold">SOBRE</h2>
+                    <div className="space-y-6 mt-10" data-aos="fade-up-left" data-aos-delay="300">
+                        <h2 className="text-4xl font-bold">SOBRE NÓS</h2>
 
                         <p>
                             No Pet Shop 4 Patas, acreditamos que cada pet é um membro da família e merece todo o amor, carinho e cuidado do mundo! Desde nossa fundação, temos a missão de oferecer os melhores produtos e serviços para garantir a felicidade e o bem-estar do seu amigo de quatro patas.
@@ -64,14 +64,16 @@ export function About() {
                         </ul>
                         <div className="flex gap-2">
                             <a
-                                href="#"
+                                target="_blank"
+                                href={`https://wa.me/5561981778422?text=Olá vim pelo site e gostaria de mais informações sobre os serviços para Pets.`}
                                 className="bg-[#E84C3D] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
                             >
                                 <WhatsappLogo className="w-5 h-5 text-white" />
                                 Contato via WhatsApp
                             </a>
                             <a
-                                href="#"
+                                target="_blank"
+                                href="https://earth.google.com/web/@0,-1.1528999,0a,22251752.77375655d,35y,0h,0t,0r/data=CgRCAggBOgMKATBCAggASg0I____________ARAA"
                                 className="flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
                             >
                                 <MapPin className="w-5 h-5 text-black" />

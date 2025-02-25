@@ -19,7 +19,7 @@ import {
 
 const testimonials = [
     {
-        title: "Banho & Tosa",
+        title: "Banho/Tosa",
         description: "Inclui banho com produtos específicos para o tipo de pelagem e pele do animal, corte de unhas, limpeza das orelhas e tosa personalizada (higiênica ou estilizada).",
         duration: "1h",
         price: "$50",
@@ -158,7 +158,7 @@ export function Services() {
 
                                             <a
                                                 target='_blank'
-                                                href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações sbore ${item.title}`}
+                                                href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações sobre ${item.title}`}
                                                 className='flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md duration-300'
                                             >
                                                 <WhatsappLogo className='w-5 h-5' />
