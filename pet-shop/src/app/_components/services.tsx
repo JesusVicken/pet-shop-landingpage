@@ -1,25 +1,38 @@
 "use client"
 
 import useEmblaCarousel from 'embla-carousel-react'
-import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock } from 'lucide-react'
-import { WhatsappLogo } from '@phosphor-icons/react'
+import {
+    ChevronLeft,
+    ChevronRight,
+    Scissors,
+    Syringe,
+    CarTaxiFront,
+    Hotel,
+    Clock,
+    PawPrint,
+    School,
+    ForkKnife,
+    Flower,
+    Stethoscope,
+    Home as HousePet
+} from 'lucide-react'; import { WhatsappLogo } from '@phosphor-icons/react'
 
-const services = [
+const testimonials = [
     {
         title: "Banho & Tosa",
         description: "Inclui banho com produtos específicos para o tipo de pelagem e pele do animal, corte de unhas, limpeza das orelhas e tosa personalizada (higiênica ou estilizada).",
         duration: "1h",
         price: "$50",
         icon: <Scissors />,
-        linkText: 'Olá, vi no site sobre Banho e tosa e gostaria de mais informações.'
+        linkText: "Olá, vi no site sobre Banho e tosa e gostaria de mais informações."
     },
     {
         title: "Consulta Veterinária",
-        description: "Oferece atendimento clínico básico ou especializado para cuidar da saúde do animal. Inclui diagnóstico de doenças, aplicação de vacinas obrigatórias.",
+        description: "Oferece atendimento clínico básico ou especializado para cuidar da saúde do animal. Inclui diagnóstico de doenças e aplicação de vacinas obrigatórias.",
         duration: "1h",
         price: "$45",
         icon: <Syringe />,
-        linkText: 'Olá, vi no site sobre Consulta veterinária e gostaria de mais informações.'
+        linkText: "Olá, vi no site sobre Consulta veterinária e gostaria de mais informações."
     },
     {
         title: "Táxi Pet",
@@ -27,17 +40,65 @@ const services = [
         duration: "2h",
         price: "$80",
         icon: <CarTaxiFront />,
-        linkText: 'Olá, vi no site sobre Táxi Pet e gostaria de mais informações.'
+        linkText: "Olá, vi no site sobre Táxi Pet e gostaria de mais informações."
     },
     {
         title: "Hotel para pets",
-        description: "Serviço de hospedagem para animais de estimação, ideal para quando os tutores precisam viajar ou se ausentar por alguns dias. Os pets ficam acomodados em espaços seguros, confortáveis.",
+        description: "Serviço de hospedagem para animais de estimação, ideal para quando os tutores precisam viajar ou se ausentar por alguns dias. Os pets ficam acomodados em espaços seguros e confortáveis.",
         duration: "1h",
         price: "$60",
         icon: <Hotel />,
-        linkText: 'Olá, vi no site sobre Hotel para pets e gostaria de mais informações.'
+        linkText: "Olá, vi no site sobre Hotel para pets e gostaria de mais informações."
     },
-]
+    {
+        title: "Adestramento",
+        description: "Treinamento personalizado para melhorar o comportamento do seu pet, incluindo comandos básicos, socialização e correção de hábitos indesejados.",
+        duration: "1h",
+        price: "$70",
+        icon: <PawPrint />,
+        linkText: "Olá, vi no site sobre Adestramento e gostaria de mais informações."
+    },
+    {
+        title: "Creche para Pets",
+        description: "Espaço seguro e divertido para seu pet passar o dia com atividades recreativas, socialização com outros animais e supervisão de profissionais qualificados.",
+        duration: "8h",
+        price: "$100",
+        icon: <School />,
+        linkText: "Olá, vi no site sobre Creche para pets e gostaria de mais informações."
+    },
+    {
+        title: "Nutrição Pet",
+        description: "Consultoria especializada para definir a melhor alimentação para seu pet, garantindo uma dieta equilibrada e saudável de acordo com suas necessidades.",
+        duration: "45min",
+        price: "$50",
+        icon: <ForkKnife />,
+        linkText: "Olá, vi no site sobre Nutrição Pet e gostaria de mais informações."
+    },
+    {
+        title: "Spa Pet",
+        description: "Sessão de relaxamento para seu pet com massagem, hidratação da pelagem, aromaterapia e cuidados especiais para o bem-estar animal.",
+        duration: "1h30",
+        price: "$90",
+        icon: <Flower />,
+        linkText: "Olá, vi no site sobre Spa Pet e gostaria de mais informações."
+    },
+    {
+        title: "Check-up Preventivo",
+        description: "Avaliação completa da saúde do seu pet, incluindo exames laboratoriais, checagem de dentes, olhos, ouvidos e pelagem para prevenção de doenças.",
+        duration: "1h",
+        price: "$120",
+        icon: <Stethoscope />,
+        linkText: "Olá, vi no site sobre Check-up Preventivo e gostaria de mais informações."
+    },
+    {
+        title: "Pet Sitter",
+        description: "Serviço de cuidador para acompanhar e atender às necessidades do seu pet no conforto da sua casa quando você estiver ausente.",
+        duration: "Variável",
+        price: "$40/hora",
+        icon: <HousePet />,
+        linkText: "Olá, vi no site sobre Pet Sitter e gostaria de mais informações."
+    }
+];
 
 export function Services() {
 
@@ -63,13 +124,16 @@ export function Services() {
         <section className="bg-white py-16">
             <div className="container mx-auto px-4">
 
-                <h2 className="text-4xl font-bold mb-12">Serviços</h2>
+                <h2 className="text-4xl font-bold text-center mb-12 flex items-center justify-center gap-2">
+                    <PawPrint className="w-8 h-8" /> 
+                    Serviços
+                </h2>
 
                 <div className="relative">
 
                     <div className='overflow-hidden' ref={emblaRef}>
                         <div className='flex'>
-                            {services.map((item, index) => (
+                            {testimonials.map((item, index) => (
                                 <div key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3">
                                     <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
                                         <div className='flex-1 flex items-start justify-between'>
