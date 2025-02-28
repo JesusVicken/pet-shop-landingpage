@@ -1,13 +1,13 @@
-// pages/_document.tsx
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import React from 'react';
 
 class MyDocument extends Document {
     render() {
         return (
-            <Html>
+            <Html lang="pt-BR">
                 <Head>
-                    <link rel="icon" href="/favicon.ico" type="image.ico" />
+                    {/* Favicon */}
+                    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
                 </Head>
                 <body>
                     <Main />
