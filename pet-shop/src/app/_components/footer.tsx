@@ -74,7 +74,7 @@ export function Footer() {
 
 
                     <div data-aos="fade-up-right">
-                        <h3 className='text-2xl font-semibold mb-2'>Redes sociais</h3>
+                        <h3 className='text-2xl font-semibold mb-2'>Redes Sociais</h3>
                         <div className='flex gap-4'>
                             <a
                                 href="#"
